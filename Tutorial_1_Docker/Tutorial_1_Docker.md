@@ -489,9 +489,13 @@ una vez conectado a Redis:
 Algunas preguntas para autoevaluar su comprensión del tutorial:
 
 1. ¿Cuál es la diferencia entre una Imágen Docker y un Contenedor Docker?
+  - La imágen es la plantilla que se utilizará por una ejecución, que en este caso es el contenedor, y este último es una instancia de ejecución que encapsula la arquitectura de software funcionando.
 2. ¿Cuál es la diferencia entre el archivo Dockerfile y el archivo Docker-compose.yml?
+  - Docker.compose es el que se encarga de definir la estructura de las tecnologías distribuyendo la imágen, el volumen y la manera de ser ejecutados. Dockerfile es un archivo de comando que instancia instrucciones de variables de ambiente y de ejecución (Ej: pip, npm, install, etc.)
 3. ¿Si utilizo un contenedor que contiene una Base de Datos (Redis, Mysql u otro), cómo y dónde se guardan los datos?
+  - Los datos serán almacenados en un volumen creado por el contenedor, por ejemplo redis-data:/data, ya que docker no almacena datos.
 4. ¿Qué es un *port*? ¿Por qué algunas imágenes requieren hacer un *bind* entre distintos puertos?
+  - Port se refiere a un puerto del pc, y algunas imágenes necesitan hacer un bind para poder comunicarse con la máquina que lo está ejecutando.
 
 ## 7. Ejercicio
 
