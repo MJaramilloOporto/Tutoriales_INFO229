@@ -130,7 +130,7 @@ la cual contiene una clase llamada "App-logo" que podemos encontrar en el ficher
     }
     }
 
-podemos ver esto escribiendo:
+podemos ver esto escribiendo en la consola:
 
     code App.css
 
