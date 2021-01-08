@@ -82,8 +82,8 @@ Podemos detener esta ejecución simplemente presionando CTRL+C en la consola.
 Para poder crear nuestro "Hola mundo" debemos acceder a la carpeta src, que contiene todos los recursos que utiliza nuestra app, especificamente al archivo App.js.
 Para lo cual ejecutaremos los siguientes comandos en otra terminal, para que no se deje de ejecutar nuestra app:
 
-cd src
-code App.js
+    cd src
+    code App.js
 
 Aqui podemos ver las componentes que se muestran en la aplicación que se encuentra ejecutandose en nuestro escritorio, en el cual debiesemos ver algo como esto:
 
@@ -118,6 +118,7 @@ Si utilizamos el inspector de elementos en el navegador podremos ver este mismo 
 Podemos ver que el logo que gira corresponde a la linea de código:
     <img src={logo} className="App-logo" alt="logo" />
 la cual contiene una clase llamada "App-logo" que podemos encontrar en el fichero App.css, en donde se definen sus características y su movimiento, en las siguientes lineas:
+
     .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -128,14 +129,19 @@ la cual contiene una clase llamada "App-logo" que podemos encontrar en el ficher
         animation: App-logo-spin infinite 20s linear;
     }
     }
+
 podemos ver esto escribiendo:
+
     code App.css
 
 pero lo que nos convoca en esta ocasión es el texto que contiene nuestra app, que según el inspector corresponde a las linea de codigo:
+
     <p>
         Edit <code>src/App.js</code> and save to reload.
     </p>
+
 que se encuentran en App.js, las cuales podemos borrar y dejar de la siguiente forma:
+
     <p>
         ¡¡¡Hola mundo!!!
     </p>
